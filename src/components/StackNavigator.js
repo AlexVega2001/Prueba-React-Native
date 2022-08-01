@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 //Screens
 import { LoginScreen } from '../screens/LoginScreen';
+import { ListAuthorsScreen } from '../screens/ListAuthorsScreen';
 
 export const StackNavigator = () => {
 
@@ -20,6 +21,11 @@ export const StackNavigator = () => {
                 <Stack.Screen 
                     name='LoginScreen' 
                     component={ LoginScreen }    
+                />
+
+                <Stack.Screen 
+                    name='ListAuthorsScreen' 
+                    component={ ListAuthorsScreen }    
                 />
             </Stack.Navigator>
         </NavigationContainer>
