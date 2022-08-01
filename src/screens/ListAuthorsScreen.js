@@ -9,7 +9,7 @@ export const ListAuthorsScreen = ({ navigation }) => {
   return (
     <View>
       <HeaderApp nav={ navigation } title={ 'ListsAuthors' } />
-      <ListsAuthors />
+      <ListsAuthors nav={ navigation }/>
     </View>
   )
 }
