@@ -31,13 +31,13 @@ export const LoginScreen = ({ navigation }) => {
                 onChangeText={ text => setPassword(text) }
                 value={ password }
             />
-            <Button style={ styles.button } mode="contained" onPress={() => console.log('Presionado')}>
+            <Button style={ styles.button } mode="contained" onPress={() => (Acceder())}>
               Iniciar Sesión
             </Button>
         </View>
         <View>
           <Text style= {styles.text}>OR</Text>
-          <Button style={ styles.button_invited } mode="contained" onPress={() => Acceder}>
+          <Button style={ styles.button_invited } mode="contained" onPress={() => console.log('Presionado')}>
               Usuario Invitado
           </Button>
         </View>
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
   },
   button_invited: {
     marginTop: 10,
-    backgroundColor: '#b9c4cd'
+    backgroundColor: '#b9c4cd',
   },
   container: {
     margin: 10,

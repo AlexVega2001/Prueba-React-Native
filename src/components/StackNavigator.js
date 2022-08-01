@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 //Screens
 import { LoginScreen } from '../screens/LoginScreen';
 import { ListAuthorsScreen } from '../screens/ListAuthorsScreen';
+import { ListPlays } from './ListPlays';
 
 export const StackNavigator = () => {
 
@@ -26,6 +27,11 @@ export const StackNavigator = () => {
                 <Stack.Screen 
                     name='ListAuthorsScreen' 
                     component={ ListAuthorsScreen }    
+                />
+
+                <Stack.Screen 
+                    name='ListPlays' 
+                    component={ ListPlays }    
                 />
             </Stack.Navigator>
         </NavigationContainer>
